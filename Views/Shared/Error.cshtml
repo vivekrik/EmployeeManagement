@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Error";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .error-container {
+            border: 1px solid red;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+            .error-container h2 {
+                color: #d9534f;
+            }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h2>Error</h2>
+        <p>Something went wrong while processing your request.</p>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div>
+                <strong>Error Details:</strong>
+                <p>@ViewBag.ErrorMessage</p>
+            </div>
+        }
+
+    </div>
+</body>
+</html>
