@@ -8,4 +8,4 @@ The **Employee Management System** is a web application built using **ASP.NET MV
 - **Database**: SQL Server with Entity Framework (Code-First Approach)
 - **Language**: C#
 - **Frontend**: HTML, CSS, Bootstrap, JavaScript
-- **Development Tools**: Visual Studio, GitHub
+- **Development Tools**: Visual Studio
